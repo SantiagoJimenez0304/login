@@ -78,6 +78,8 @@ def logout():
     session.pop('username', None)
     return redirect(url_for('index'))
 
+app.run(host="0.0.0.0", port=8080)
+
 
 if __name__ == '__main__':
     init_db()
